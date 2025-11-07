@@ -18,7 +18,7 @@ The project addresses the challenges of processing Thai text, such as its lack o
 - `pip` (Python package manager)
 - Virtual environment (recommended)
 - Git (for cloning the repository)
-- [Models](https://huggingface.co/Thope32/ner_historical_model)
+- [Trained Models](https://huggingface.co/Thope32/ner_historical_model) for the Project
 
 ### Steps
 1. **Clone the Repository**
