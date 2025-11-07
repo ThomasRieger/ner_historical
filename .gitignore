@@ -1,6 +1,6 @@
 /venv_final
 /.vscode
-Final_v1/ner_modelfinal
+Final_v1/ner_modelfinal_v1
 Final_v1/ner_modelfinal_v2
 Final_v1/ner_modelfinal_v4
 Final_v1/ner_modelfinal_v3
@@ -10,6 +10,7 @@ Final_v1/ner_modelfinal_5
 Final_v1/ner_modelfinal_10
 Final_v1/ner_modelfinal_15
 Final_v1/ner_modelfinal_20
+Final_v1/ner_modelfinal_25
 /NER_TrainingArgs
 /.streamlit
 Final_v1/pull_loss.py
@@ -24,3 +25,4 @@ Final_v1/train_old.py
 /NER_TrainingArgs_5
 /NER_TrainingArgs_10
 /NER_TrainingArgs_15
+/TEST_EVAL
