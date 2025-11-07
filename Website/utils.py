@@ -7,7 +7,7 @@ from transformers import AutoTokenizer, AutoModelForTokenClassification
 # This is the main repository ID
 MODEL_DIR = "Thope32/ner_historical_model"
 # This is the subfolder inside that repository
-MODEL_SUBFOLDER = "ner_modelfinal_v2" 
+MODEL_SUBFOLDER = "ner_modelfinal_25" 
 
 GITHUB_REPO = "ThomasRieger/NER_Historical_Storage"
 GITHUB_BRANCH = "main"
