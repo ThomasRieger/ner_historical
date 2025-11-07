@@ -4,17 +4,10 @@ from typing import List, Dict, Any
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 
 # --- Config ---
-# Reverted to local model path as requested.
-# This version contains the POS tags (e.g., "NN|B_COU") needed for SPO extraction.
-MODEL_DIR = os.path.join("Final_v1", "ner_modelfinal_25")
-
-# --- NOTE on Hugging Face ---
-# The model currently on Hugging Face (Thope32/ner_historical_model)
-# appears to be missing the POS tags in its labels (it only has "B_COU", not "NN|B_COU").
-# If you want to deploy to Streamlit Cloud, you must re-upload the *correct*
-# model files (including the config.json with complex labels) to Hugging Face.
-# MODEL_DIR = "Thope32/ner_historical_model"
-# MODEL_SUBFOLDER = "ner_modelfinal_25" 
+# This is the main repository ID
+MODEL_DIR = "Thope32/ner_historical_model"
+# This is the subfolder inside that repository
+MODEL_SUBFOLDER = "ner_modelfinal_25" 
 
 GITHUB_REPO = "ThomasRieger/NER_Historical_Storage"
 GITHUB_BRANCH = "main"
@@ -31,12 +24,12 @@ def load_ner_model():
     try:
         tokenizer = AutoTokenizer.from_pretrained(
             MODEL_DIR, 
-            # subfolder=MODEL_SUBFOLDER, # No subfolder needed for local path
+            subfolder=MODEL_SUBFOLDER, # <-- Use the subfolder argument
             use_fast=True
         )
         model = AutoModelForTokenClassification.from_pretrained(
             MODEL_DIR,
-            # subfolder=MODEL_SUBFOLDER # No subfolder needed for local path
+            subfolder=MODEL_SUBFOLDER # <-- Use the subfolder argument
         ).to(DEVICE)
         model.eval()
         # สร้าง id2label mapping
