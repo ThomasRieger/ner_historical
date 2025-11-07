@@ -9,3 +9,4 @@ sentencepiece
 matplotlib
 pandas
 accelerate>=0.26.0
+hf_xet
