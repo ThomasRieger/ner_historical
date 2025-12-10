@@ -32,14 +32,14 @@ def run_user_page():
         st.session_state.results = []
         
     # Button GitHub
-    if st.button("Sync/Load Data from GitHub"):
-        with st.spinner("Loading data from GitHub..."):
-            df = pull_from_github()
-            if not df.empty:
-                st.session_state.results = df.to_dict('records')
-            else:
-                st.session_state.results = []
-        st.success("Sync complete!")
+    # if st.button("Sync/Load Data from GitHub"):
+    #     with st.spinner("Loading data from GitHub..."):
+    #         df = pull_from_github()
+    #         if not df.empty:
+    #             st.session_state.results = df.to_dict('records')
+    #         else:
+    #             st.session_state.results = []
+    #     st.success("Sync complete!")
     input_mode = st.radio("Select Input Type", ["Manual Text", "Upload CSV"])
     if input_mode == "Manual Text":
         text = st.text_area("Enter your text:", height=150)
