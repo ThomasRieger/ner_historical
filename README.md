@@ -108,3 +108,4 @@ For questions, suggestions, or issues, please:
 - [attacut](https://github.com/PyThaiNLP/attacut) for word tokenizer
 - [WangchanBERTa base model](https://huggingface.co/airesearch/wangchanberta-base-att-spm-uncased) for base model
 - [Named Entity Recognition for Thai Historical Data](https://ieeexplore.ieee.org/document/10613644) Historical researchers and contributors to the Suvarnabhumi case study.
+- [Thai Nested Named Entity Recognition Corpus](https://aclanthology.org/2022.findings-acl.116/)
