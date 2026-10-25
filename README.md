@@ -1,7 +1,7 @@
 # NameD Entity Extraction for Historical Text Similarity: A Case Study of Suvarnabhumi
 
 ## Overview
-This project, hosted at ([https://github.com/ThomasRieger/NER_Historical](https://ner-historical.streamlit.app/)), implements a Named Entity Recognition (NER) and Part-of-Speech (POS) tagging system designed for Thai historical texts, with a specific focus on the historical context of Suvarnabhumi. The system extracts named entities (e.g., persons, locations, organizations) and linguistic features from Thai texts to facilitate text similarity analysis and support historical research.
+This project, hosted at ([NER_Historical App](https://ner-historical.streamlit.app/)), implements a Named Entity Recognition (NER) and Part-of-Speech (POS) tagging system designed for Thai historical texts, with a specific focus on the historical context of Suvarnabhumi. The system extracts named entities (e.g., persons, locations, organizations) and linguistic features from Thai texts to facilitate text similarity analysis and support historical research.
 
 The project addresses the challenges of processing Thai text, such as its lack of word boundaries and complex script, using NLP tools optimized for the Thai language. It is intended for researchers, historians, and NLP practitioners interested in analyzing Thai historical documents.
 
